@@ -1,10 +1,5 @@
-function writeCards(nameArray) {
-    let arr = [];
-    for(let i = 0; i <nameArray.length; i++) {
-        arr.push(`Thank you, ${nameArray[i]}, for the wonderful surprise gift!`);
-    }
-    return arr;
-}
+const writeCards = nameArray => nameArray.map(ele => `Thank you, ${ele}, for the wonderful surprise gift!`);
+
 function countDown(n) {
     while(n>=0) {
         console.log(n);
